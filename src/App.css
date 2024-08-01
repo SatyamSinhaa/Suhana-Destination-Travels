@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(250, 246, 237);
+  color: black;
+}
+h1,h2,h3,h4,h5,h6,a,p,li,span,button,small{
+  font-family: "Inter", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+}
+.heading{
+  width: 100vw;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+}
+.app{
+  position: relative;
+}
+
+.iconWhatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  }

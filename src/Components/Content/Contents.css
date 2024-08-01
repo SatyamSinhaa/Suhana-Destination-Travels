@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Corinthia:wght@400;700&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.content {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .para {
+        font-family: "Nunito", sans-serif;
+    }
+}
+
+.content {
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: rgb(202, 133, 5);
+        position: sticky;
+        background-color: rgb(250, 246, 237);
+        top: 70px;
+        z-index: 99;
+        margin-top: 20px;
+        font-family: "Arsenal SC", sans-serif;
+        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    }
+
+    audio {
+        height: 30px;
+        width: 250px;
+    }
+
+    audio::-webkit-media-controls-panel {
+        background-color: rgb(250, 246, 237);
+    }
+
+    .infofile {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+    }
+
+    .videofile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: grey;
+        border-radius: 50%;
+        font-size: 16px;
+        color: white;
+    }
+}
+
+
+
+.content h2 {
+    color: maroon;
+    margin: 20px 0px 3px;
+    padding: 0;
+}
+
+.content h3 {
+    margin: 10px 0px 2px;
+    color: rgb(26, 56, 110);
+}
+
+.content .image {
+    height: auto;
+    width: 70%;
+    text-align: center;
+    margin: 30px 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+span a {
+    font-style: italic;
+}
+
+span {
+    margin-top: 30px;
+    animation: blink-animation 1s step-end infinite alternate;
+    width: 100%;
+
+    a {
+        padding: 10px 15px;
+        border-radius: 18px;
+        background-color: wheat;
+        color: red;
+    }
+}
+
+span a:hover {
+    background-color: #cefcd0;
+    color: green;
+}
+
+.titlelist-onsearch {
+    background-color: white;
+    padding: 10px 20px;
+    width: 300px;
+    text-align: start;
+
+    a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:1024px) {
+    .content {
+        margin-top: 0;
+
+        .image {
+            width: 100%;
+        }
+    }
+
+    .content h1 {
+        top: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        margin-top: 0;
+    }
+
+    .content h1 {
+        top: 0;
+    }
+    .infofile {
+
+    }
+}
+
+
+
+
+
+.overlayvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+.overlayvideo .modelvideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(90, 90, 90, 0.8);
+    padding: 50px 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+    width: 80%;
+    height: 80%;
+
+    video {
+        width: 80%;
+    }
+
+}
+
+.overlayvideo .modelvideo .crossvideo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.overlaygallary {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+.overlayvideo .modelgallary {
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+.overlaygallary .modelgallary .crossgallary {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.gallaryimg {
+    width: 1000px;
+    padding: 50px 80px;
+    gap: 30px;
+}
+
+.gallaryimg img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}

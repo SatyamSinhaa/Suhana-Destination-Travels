@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lovers+Quarrel&family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.intoduction {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+    h2 {
+        font-size: 50px;
+        color: rgb(114, 78, 1);
+        font-weight: 400;
+        margin-bottom: 30px;
+        font-family: "Moon Dance", cursive;
+
+    }
+
+    p {
+        color: rgb(114, 78, 1);
+    }
+}
+
+@media(max-width:768px) {
+    .intoduction {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+.carder {
+    background-image: url("../../Assets/church.jpg");
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 0;
+    margin-top: 30px;
+
+    .cards {
+        padding: 30px 0;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .box {
+        height: 300px;
+        width: 200px;
+        background-color: black;
+    }
+}
+
+
+.home-header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding-top: 70px;
+    background-color: rgb(250, 246, 237);
+
+    .header-title {
+        background-color: rgb(248, 245, 237);
+        height: 100%;
+        width: 45%;
+        padding: 30px;
+        padding-left: 130px;
+        display: flex;
+        gap: 50px;
+        padding-top: 100px;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .heading-places {
+            color: rgb(143, 113, 58);
+
+            span {
+                span {
+                    color: rgb(0, 95, 67);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .heading-info {
+            margin-right: -10px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            align-content: center;
+
+            h1 {
+                font-family: "Lora", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                color: rgb(143, 113, 58);
+                font-size: 45px;
+            }
+
+            p {
+                color: rgb(143, 113, 58);
+                font-size: 14px;
+            }
+
+            a {
+                height: 50px;
+                width: 150px;
+                text-align: center;
+                align-content: center;
+                outline: none;
+                border: none;
+                font-size: 18px;
+                color: rgb(143, 113, 58);
+                background: transparent;
+                border: 1px solid rgb(143, 113, 58);
+
+            }
+
+            a:hover {
+                background-color: rgb(143, 113, 58);
+                color: white;
+            }
+        }
+
+        .heading-icons {
+            color: rgb(122, 106, 85);
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .heading-icons {
+            span:hover {
+                color: rgb(255, 166, 0);
+            }
+        }
+    }
+}
+
+.video {
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        video {
+            margin-left: -10px;
+        }
+
+    }
+
+    .filter {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-shadow: inset 300px 100px 200px rgb(250, 246, 237), inset -50px -200px 200px rgb(250, 246, 237);
+    }
+}
+
+@media(max-width:1300px) {
+    .home-header {
+        height: auto;
+        flex-direction: column-reverse;
+
+        .header-title {
+            width: 100%;
+            padding: 70px 30px;
+        }
+
+        .video {
+            height: 370px;
+            width: 100%;
+
+            video {
+                margin-bottom: -10px;
+            }
+
+            .filter {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+/* ====================services============================ */
+
+.service-plan {
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+    h1 {
+        font-weight: 600;
+        color: rgb(133, 86, 0);
+    }
+
+    .plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .plan {
+            background-color: rgb(233, 233, 233);
+            border-radius: 15px;
+            width: 300px;
+            height: 170px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 15px;
+            transition: 350ms;
+
+            h3 {
+                font-weight: 600;
+                color: rgb(133, 86, 0);
+            }
+
+            .p1 {
+                color: coral;
+                font-size: 24px;
+            }
+
+            .p2 {
+                color: rgb(0, 0, 255);
+                font-size: 24px;
+            }
+
+            .p3 {
+                color: rgb(255, 0, 0);
+                font-size: 24px;
+            }
+
+            .p4 {
+                color: green;
+                font-size: 24px;
+            }
+
+            p {
+                color: rgb(122, 116, 104);
+                font-weight: 400;
+            }
+        }
+
+        .plan:hover {
+            transition: 350ms;
+            background-color: rgb(255, 247, 233);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}
+
+/* ==========================quote------------------------ */
+
+.quote {
+    padding: 0 20px;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    h1 {
+        font-weight: 600;
+        color: rgb(133, 86, 0);
+    }
+
+    p {
+        color: rgb(122, 116, 104);
+        font-weight: 400;
+    }
+    .imge {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.1;
+    }
+    .icons-trip1 {
+        top: 90px;
+        left: 220px;
+        position: absolute;
+
+        img {
+            opacity: 0.3;
+            width: 100px;
+        }
+    }
+
+    .icons-trip2 {
+        top: 120px;
+        right: 220px;
+        position: absolute;
+
+        img {
+            opacity: 0.3;
+            width: 100px;
+        }
+    }
+
+    .icons-trip3 {
+        bottom: 120px;
+        left: 220px;
+        position: absolute;
+
+        img {
+            opacity: 0.3;
+            width: 100px;
+        }
+    }
+
+    .icons-trip4 {
+        bottom: 90px;
+        right: 220px;
+        position: absolute;
+
+        img {
+            opacity: 0.3;
+            width: 100px;
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .quote{
+    .icons-trip1 {
+        left: 35px;
+    }
+
+    .icons-trip2 {
+        right: 35px;
+    }
+
+    .icons-trip3 {
+        left: 35px;
+    }
+
+    .icons-trip4 {
+        right: 35px;
+    }
+}
+}
+
+/* ===============popular destinations============================= */
+
+.popular-destinations {
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        color: rgb(133, 86, 0);
+    }
+
+    .popularplaces {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .popularplace {
+            background-color: rgb(233, 233, 233);
+            border-radius: 15px;
+            width: 450px;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: 350ms;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            padding-right: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            .popularplace-img {
+                width: 40%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            h3 {
+                font-weight: 600;
+                color: rgb(133, 86, 0);
+            }
+
+            span {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: rgb(207, 214, 218);
+                margin: 0;
+                animation: moveLeftRight 4s infinite linear;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent;
+                }
+            }
+        }
+
+        .popularplace:hover img {
+            transform: scale(1.1);
+        }
+
+        .plan:hover {
+            transition: 350ms;
+            background-color: rgb(255, 247, 233);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+}
+
+@keyframes moveLeftRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+@media(max-width:530px) {
+    .popular-destinations .popularplaces .popularplace{
+        width: 300px;
+        height: 100px;
+        span{
+            height: 30px;
+            width: 30px;
+            font-size: 15px;
+        }
+    }
+}

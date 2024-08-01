@@ -1,0 +1,325 @@
+.trip-package-container {
+    height:900px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 30px;
+    box-shadow: inset 0px -231px 406px #222;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    span {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    h1 {
+        color: white;
+        font-size: clamp(1.4rem, 2.5vw, 3rem);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+        color: white;
+        font-weight: 400;
+    }
+
+    .line {
+        width: 80%;
+        margin: 0 auto;
+        height: 2px;
+        background-color: rgb(255, 0, 76);
+        border-radius: 50%;
+        box-shadow: inset 41px 0 5px -6px rgba(255, 255, 255, 0.5), inset -41px 0 5px -14px rgba(255, 255, 255, 0.5);
+    }
+
+    .price {
+        font-size: 15px;
+        color: white;
+        text-decoration: line-through;
+    }
+
+    button {
+        padding: 15px 30px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: white;
+        background-color: rgb(255, 0, 76);
+        border-radius: 25px
+    }
+
+}
+.trip-package-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Assets/MBG.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+    animation: scaleBackground 10s ease-in-out infinite;
+  }
+@keyframes scaleBackground {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@media(max-width:1440px){
+    .trip-package-container{
+        height: 700px;
+    }
+}
+
+.title-label {
+    margin: 80px auto;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgb(239, 239, 239);
+    padding: 20px 30px;
+
+    h2 {
+        margin-bottom: 10px;
+        color: rgb(65, 65, 65);
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: rgb(141, 141, 141);
+    }
+}
+
+.packages {
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+
+    .combo-pack1 {
+        width: 557px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+
+        h1 {
+            font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+            margin-bottom: 20px;
+            margin-top: 5px;
+            font-weight: 600;
+            color: rgb(70, 70, 70);
+        }
+
+        .combo-pack-details {
+            .combo-img {
+                background-color: black;
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    object-fit: fill;
+                }
+            }
+
+            .combo-price {
+                width: 100%;
+                padding: 15px 12px;
+                border-radius: 15px;
+                background-color: rgb(236, 236, 236);
+
+                p {
+                    text-align: center;
+                    color: rgb(105, 105, 105);
+                    line-height: 1.5;
+                }
+
+                span {
+                    background-color: rgb(223, 223, 223);
+                    border-radius: 25px;
+                    padding: 5px 15px;
+                    color: rgb(0, 47, 255);
+                    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+                    margin-right: 5px;
+                    color: #000;
+                }
+
+                span:hover {
+                    color: white;
+                    background-color: blue;
+                }
+
+                .combo-call {
+                    width: 100%;
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 15px;
+
+                    h3 {
+                        font-size: clamp(0.8rem, 2.5vw, 1rem);
+                        color: white;
+                        background-color: rgb(0, 175, 0);
+                        padding: 15px 30px;
+                        border-radius: 25px
+                    }
+
+                    h3:hover {
+                        background-color: rgb(2, 143, 2);
+                    }
+
+                    .btn-btn {
+                        button {
+                            padding: 15px 25px;
+                            margin-left: 10px;
+                            border: none;
+                            outline: none;
+                            font-size: clamp(0.8rem, 2.5vw, 1rem);
+                            color: white;
+                            background-color: rgb(85, 85, 255);
+                            border-radius: 25px
+                        }
+
+                        button:hover {
+                            background-color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1440px) {
+    .packages {
+        margin: 80px 20px;
+    }
+}
+@media(max-width:714px) {
+    .packages {
+        margin: 80px 10px;
+        .combo-pack1 {
+            width: 100%;
+            padding: 15px;
+            .combo-price {
+                .combo-call {
+                    h3 {
+                        margin-top: 10px;
+                        padding: 7px 18px;
+                        border-radius: 18px
+                    }
+                    .btn-btn {
+                        button {
+                            padding: 7px 18px;
+                            border-radius: 18px
+                        }
+                    }
+                }
+            }
+
+        }
+}
+}
+
+@media(max-width:474px) {
+    .packages .combo-pack1 .combo-price .combo-call {
+        flex-direction: column;
+
+        h3 {
+            width: 100%;
+        }
+
+        .btn-btn {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+        }
+    }
+
+    .title-label {
+        margin: 80px auto;
+        border-radius: 10px;
+        width: 80%;
+        background-color: rgb(239, 239, 239);
+        padding: 12px 16px;
+    }
+} 
+
+
+/* ================model===================== */
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+.overlay .model {
+  
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    padding: 50px 0;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+
+}
+
+.overlay .model .cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.modelIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media(max-width:800px) {
+    .overlay {
+        width: 100vw;
+    }
+
+    .overlay .model {
+        width:96vw;
+        height: auto;
+    }
+}

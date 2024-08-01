@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999999;
+    position: fixed;
+    /* background-color: black; */
+    background-color: rgb(248, 240, 224);
+
+    a {
+        height: 70px;
+        padding: 0 20px;
+        text-align: center;
+        align-content: center;
+        font-size: 1.2rem;
+        color: rgb(143, 113, 58);
+    }
+}
+
+nav .logo {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1 {
+        font-size: 40px;
+        color: rgb(143, 113, 58);
+        font-family: "Caveat", cursive;
+    }
+    img {
+        height: 100%;
+        border-radius: 50%;
+        
+    }
+}
+
+nav a.active {
+    color: rgb(255, 255, 254);
+    background-color: rgb(218, 167, 74);
+}
+
+nav a:hover {
+    color: rgb(255, 255, 254);
+    background-color: rgb(218, 167, 74);
+    transition: ease-in-out 0.5s;
+
+
+
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media(max-width:1372px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.active {
+        align-items: center;
+    }
+
+    .menu {
+        position: absolute;
+        height: 550px;
+        width: 300px;
+        z-index: -1;
+        top: 0vh;
+        right: -100vw;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        flex-direction: column;
+        transition: 0.4s all ease-in-out;
+        padding-top: 50px;
+
+        a {
+            width: 200px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            border: 1px solid rgb(104, 103, 103);
+            text-align: start;
+            background-color: rgb(141, 140, 139);
+        }
+    }
+
+    .active {
+        right: 0vw;
+    }
+
+    nav .logo{
+        height: 60px;
+        h1 {
+            font-size: 30px;
+        }
+        img {
+            height: 100%;
+            border-radius: 50%;
+            
+        } 
+    }
+}
+
+@media(max-width:700px) {
+    .searching {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .menu{
+        width: 100%;
+    }
+    nav {
+        padding: 0 15px;
+        gap: 25px;
+    }
+    nav .logo{
+        height: 40px;
+        h1 {
+            font-size: 18px;
+        }
+        img {
+            height: 100%;
+            border-radius: 50%;
+            
+        } 
+    }
+}
