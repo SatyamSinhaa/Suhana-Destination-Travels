@@ -10,7 +10,6 @@ import logo from '../../Assets/logo.png'
 import TripPackage from '../../Pages/TripPackage/TripPackage';
 
 const Navbar = () => {
-
   const [click, setClick] = useState(false)
 
   const handleClick = () => {
@@ -24,7 +23,6 @@ const Navbar = () => {
           <h1>Suhana Destination & Travels</h1>
         </div>
         <div className={click ? "menu active" : "menu"}>
-
           <NavLink to="/" element={<Home />}>Home</NavLink>
           <NavLink to='/tours' element={<Tours />}>Tours</NavLink>
           <NavLink to="/about" element={<About />}>Trip-Itinerary</NavLink>

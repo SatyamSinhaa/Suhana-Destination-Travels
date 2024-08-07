@@ -13,7 +13,7 @@ import Whatsapp from "./Assets/whatsapp (1).png";
 
 const routes = (
 
-  <Router>
+  <Router basename="/Suhana-Destination-Travels">
     <ScrollgToTop>
       <Routes>
         <Route path='/' exact element={<Home />} />
